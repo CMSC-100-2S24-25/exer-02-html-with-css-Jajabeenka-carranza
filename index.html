@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 
 <html>
-    <header>
-        <h1 style="background-color: lightblue;
-    display: flex;
-    height: 120px;
-    align-items: center;
-    justify-content: center;">My Portfolio</h1>
-    </header>
-    <hr />
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
     <body>
-        <h3>Featured Photo</h3>
-        <img src = "assets/carranza.jpg" alt = "My picture">
-        <h3>Previous Projects</h3>
-        <h5>Hunter and Chitter</h5>
-        <p>A game developed using Godot</p>
-        <h5>Corn Project</h5>
-        <p>A mobile application that uses a model to determine the sickness of a corn plant using an image of its leaves</p>
-        <img src = "assets/corn_project.png" alt = "My picture">
-        <h5>Skills</h5>
-        <p>
+        <header>
+            <div id = "logo" class = "logo">
+                <h1>Jared Lev Carranza</h1>
+                <p>Software Developer</p>
+            </div>
 
-        </p>
+            <div>
+                <nav>
+                    <a href = "#about">About</a>
+                    <a href = "#projects">Previous Projects</a>
+                    <a href = "#skills">Skills</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class = "content">
+            <section id = "about" class = "about">
+                <h1>About</h1>
+                <div class = "intro">
+                    <img class = "pic" src = "assets/carranza.jpg" alt = "My picture">
+                    <p>
+                        I am a student in University of the Philippines - Los Baños taking BS Computer Science. I was born in Lopez, Quezon on February 12, 2002. My current interests are mostly aligned with the development of video games such as pixel art and game development across different engines but for now I am focusing on Godot. <br><br>I see myself in the future as someone who has a main job to fund my interest of making video games and side projects.
+                    </p>
+                </div>
+            </section>
+
+            <section id = "projects" class = "projects">
+                <h1>Previous Projects</h1>
+                <div class = "handc">
+                    <h3>Hunter and Chitter</h3>
+                    <div class = "handc-desc">
+                        <img class = "gpic" src = "assets/handc.png" alt = "Hunter and Chitter">
+                        <p>A game developed using Godot. It is still a work in progress.</p>
+                    </div>
+                </div>
+            
+                <div class = "corn-project">
+                    <h3>Corn Project</h3>
+                    <div class = "corn-desc">
+                        <img class = "cpic" src = "assets/corn_project.png" alt = "Corn Project">
+                        <p>A mobile application that uses a model to determine the sickness of a corn plant using an image of its leaves</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "skills" class = "skills">
+                <h1>Skills</h1>
+                <div class = "skill-cont">
+                    <div class="skill">
+                        <img class = "icon" src = "assets/leader.png" alt = "Leadership">
+                        <p>Leadership</p>
+                    </div>
+                    <div class="skill">
+                        <img class = "icon" src = "assets/html-css.png" alt = "HTML & CSS">
+                        <p>HTML & CSS</p>
+                    </div>
+                    <div class="skill">
+                        <img class = "icon" src = "assets/javascript.png" alt = "JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>130 Lanzones St., San Jose Village 1 Ph 4C, Brgy. Biñan Poblacion, Biñan, Laguna 4024</p>
+            <p>09291852425</p>
+            <a href = "#logo">Personal Website</a>
+            <p>Copyright 2025</p>
+            <br>
+            <a>Back to Top</a>
+        </footer>
     </body>
 </html>
